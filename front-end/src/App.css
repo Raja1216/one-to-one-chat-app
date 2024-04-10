@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: rgb(189, 185, 185);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connection_form{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: .5rem;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.auth_form form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  height: 3rem;
+  width: 20rem;
+  outline: none;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.connection_form button{
+  height: 3rem;
+  width: 22rem;
+  outline: none;
+  border-radius: .5rem;
+  border: 1px solid red;
+  background:none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.connection_form button:hover{
+  background:green;
+  color: aliceblue;
+  border: 1px solid green;
+}
+
+
+.chat_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding: 2rem 5rem;
+  border: 1px solid orange;
+  border-radius: .5rem;
+  width: 40rem;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.send_button{
+  border: 2px solid rgb(42, 206, 247);
+  background: none;
+  height: 3rem;
+  width: 5rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.send_button:hover{
+  background: rgb(42, 206, 247);
+  color: white;
+}
+
+.massges_container{
+  background: white;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  border-radius: .5rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.massges_container::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5rem;
+  background-color: gray;
+}
+
+
+.message_card{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  width: 10rem;
+  border: 1px solid green;
+  background: rgb(124, 235, 124);
+  align-items: start;
+  border-radius: .5rem;
+}
+
+.card_left{
+  margin-left: 70%;
+}
+
+select{
+  height: 3rem;
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 0 .5rem;
+  outline: none;
+}
+
+.auth_form > span{
+  cursor: pointer;
+  color: blue;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
